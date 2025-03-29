@@ -13,6 +13,7 @@ function creerQuizDepuisDoc() {
   const form = FormApp.create(quizTitle)
                     .setDescription(quizDescription)
                     .setProgressBar(true)
+                    .setCollectEmail(true)
                     .setIsQuiz(true);
 
   // Process content by levels (sections starting with -)
